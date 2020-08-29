@@ -1,0 +1,71 @@
+body {
+	background-color: #b83227;
+}
+
+nav {
+	z-index: 99;
+}
+
+input[type='text'] {
+	width: 40%;
+	padding: 12px 20px;
+	display: inline-block;
+}
+
+input[type='email'],
+input[type='tel'],
+input[type='number'] {
+	width: 40%;
+	padding: 12px 20px;
+	display: inline-block;
+}
+
+input[type='password'] {
+	width: 40%;
+	padding: 12px 20px;
+	display: inline-block;
+}
+
+input[type='submit']:hover {
+	opacity: 0.8;
+}
+
+ion-icon {
+	font-size: 50px;
+	color: black;
+}
+
+.about {
+	font-size: 80px;
+	font-weight: 30%;
+	color: white;
+}
+
+.small {
+	color: black;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.bottom-left {
+	position: absolute;
+	top: 30%;
+}
+
+.big {
+	font-family: Impact, Charcoal, sans-serif;
+	color: grey;
+	font-size: 80px;
+	font-weight: 30%;
+}
+
+.sub {
+	font-family: Impact, Charcoal, sans-serif;
+	color: black;
+	font-size: 30px;
+	font-weight: 30%;
+}
