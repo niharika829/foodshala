@@ -5,11 +5,9 @@
  https://drive.google.com/drive/folders/1XJkiZYIwvwRlSh8QdRWbj8qyVmVJJCEK?usp=sharing
 ## live project :-
  https://troublous-waters.000webhostapp.com/home.php
-## Admin credentials (one can change it by updating account once logged in , in the admin account):-
- username:- test@test.com
+## Admin credentials are inside admin.sql table (one can change it by updating account once logged in , in the admin account):-
  
- password:- Test@1
-## sign up to create a new account , or use any of these
+## sign up to create a new account , or use any of these (from userdata.sql)
  username:- ema@gmail.com
  
  password:- Ema@1
