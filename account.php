@@ -94,11 +94,12 @@ if (mysqli_num_rows($res) > 0) {
 
           </form>
         </li>
-        <li class="nav-item">
-          <form action="cart.php" method="post">
-            <button name="submit_to_cart" value="0" style="margin-left:370px;margin-top:6px" class="btn btn-primary">cart <span class="badge badge-light"><?php echo $count ?></span></button>
-          </form>
-        </li>
+         &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+                <li class="nav-item">
+                    <form action="cart.php" method="post">
+                        <button style="width:100%;font-size:20px;" name="submit_to_cart" value="0" class="btn btn-primary">cart <span class="badge badge-light"><?php echo $count ?></span></button>
+                    </form>
+                </li>
       </ul>
     </div>
   </nav>
