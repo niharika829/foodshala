@@ -46,10 +46,29 @@ body{
 .mydiv{width:40%;
   background-color:white;
 }
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  border-radius: 40px;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
 .myform {
 width:40%;
 background-color:white;}
+input {
+  width: 80%;
+  padding: 12px 20px;
 
+  display: inline-block;
+}
 input[type=email] {
   width: 80%;
   padding: 12px 20px;
@@ -65,20 +84,7 @@ input[type=email] {
    display: inline-block;
 
  }
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 80%;
-  border-radius: 40px;
-}
 
-input[type=submit]:hover {
-  opacity: 0.8;
-}
 
 
 @media screen and (max-width: 300px) {
@@ -90,7 +96,7 @@ input[type=submit]:hover {
 
 </style>
 
-</head><body><form method='post'><input style='width:20%;font-size:20px;' class='btn btn-warning'
+</head><body><form method='post'><input style='width:20%;font-size:1vw;' class='btn btn-warning'
 type='submit' name='myaccount' value='back to my account'></form><center><div class='mydiv' id='division'>";
 
 echo "id :- " . $id . "<br>";
@@ -129,7 +135,7 @@ echo "
             
            
          </div>
-      <input type='submit' name='final_in_order' value='done'>
+      <input type='submit' style='font-size:2vw;' name='final_in_order' value='done'>
       </form></div></center></body></html>";
 
 if (isset($_POST['final_in_order'])) {
@@ -211,7 +217,7 @@ if (isset($_POST['final_in_order'])) {
       </ol>
     </nav>";
       echo "<form method='post' action='account.php'>
-            <input type='submit' name='final_in_order' value='back to my account'>
+            <input type='submit' style='font-size:2vw;' name='final_in_order' value='back to my account'>
             </form></center>";
     } else {
       die('error!!!' . mysqli_error($conn));
