@@ -17,6 +17,9 @@ if (isset($_POST['orders'])) {
 if (isset($_POST['edit'])) {
     header('Location:user_edit.php');
 }
+if (isset($_POST['logout'])) {
+  header('Location:login.php');
+}
 if (isset($_SESSION['username'])) {
     $name = $_SESSION['username'];
     $first = $_SESSION['first'];
@@ -88,16 +91,17 @@ if (mysqli_num_rows($res) > 0) {
                         <input style="width:100%;font-size:20px;" class="btn btn-danger" type="submit" value="logout" name="logout">
                     </form>
                 </li>
+                &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
                 <li class="nav-item">
                     <form action="cart.php" method="post">
-                        <button name="submit_to_cart" value="0" style="margin-left:370px;margin-top:6px" class="btn btn-primary">cart <span class="badge badge-light"><?php echo $count ?></span></button>
+                        <button style="width:100%;font-size:20px;" name="submit_to_cart" value="0" class="btn btn-primary">cart <span class="badge badge-light"><?php echo $count ?></span></button>
                     </form>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="container-fluid">
-        <img src="images/pict1.jpg" alt="Snow" style="width:100%;height:60%;">
+        <img src="images/rest_1.jpg" alt="Snow" style="width:100%;height:60%;">
         <div class="bottom-left">
             <div data-aos="fade-right">
                 <h2 class="about" style="font-size:5vw;"><i><?php echo "Welcome " . $name; ?></i></h2>
