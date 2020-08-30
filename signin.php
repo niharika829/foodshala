@@ -142,7 +142,7 @@ if (isset($_POST['myaccount'])) {
               </p>
               <input type="file" name="img1" style=" color:white;">
             </p>
-            <input type="submit" name="submit" value="create new account">
+            <input type="submit" style='font-size:2vw;' name="submit" value="create new account">
 
       </form>
       <form method='post'><input class='btn btn-warning' type='submit' name='myaccount' value='back to login'></form>
